@@ -1,0 +1,115 @@
+* {
+    text-decoration: none;
+}
+.menu-container {
+    background: #ffffff;
+    border-radius: 16px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    padding: 16px;
+}
+.menu-container a {
+    background: #f8f8f8;
+    border-radius: 16px;
+    border: 2px solid #f8f8f8;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    color: #808080;
+    min-width: max-content;
+    opacity: 50%;
+}
+.menu-container a:hover {
+    border: 2px solid #007fff;
+    border-radius: 16px;
+    color: #007fff;
+    opacity: 100%;
+}
+.menu-container a .image {
+    width: 24px;
+    display: block;
+}
+.menu-container a .image img {
+    display: block;
+    width: 100%;
+}
+
+header {
+    height: 100px;
+}
+#spotlight {
+    background-image: url(./../assets/images/facilities.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px);
+}
+
+#spotlight h2 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 80px;
+}
+
+#sub-container {
+    padding: 100px 0;
+}
+#sub-container .wrapper {
+    width: 90%;
+    margin: 0 auto;
+    /* max-width: 1350px; */
+}
+#sub-container .top-card {
+    display: flex;
+    flex-direction: column;
+}
+#sub-container .top-card h2 {
+}
+#sub-container .top-card p {
+}
+#sub-container .facilities {
+    display: flex;
+    gap: 73px;
+}
+#sub-container .facilities .left-card {
+}
+#sub-container .facilities .right-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+#sub-container .wrapper .facilities .right-card .cards {
+    display: flex;
+    gap: 48px;
+    padding: 70px;
+}
+#sub-container .facilities .right-card .cards:nth-child(even) {
+    flex-direction: row-reverse;
+}
+#sub-container .wrapper .facilities .right-card .cards .content {
+    width: 70%;
+}
+#sub-container .wrapper .facilities .right-card .cards .content h2 {
+    font-weight: 400;
+    font-size: 33px;
+}
+#sub-container .wrapper .facilities .right-card .cards .content p {
+    font-weight: 400;
+    color: #1a1c1e;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+}
+#sub-container .wrapper .facilities .right-card .cards .image {
+    width: 30%;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 100%;
+}
+#sub-container .wrapper .facilities .right-card .cards .image img {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
