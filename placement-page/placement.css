@@ -5,6 +5,11 @@
   font-family: "poppins", sans-serif;
 }
 
+.placement-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
 .placement-hero {
   position: relative;
   background-position: center center;
@@ -53,45 +58,91 @@
   font-size: 12rem;
   font-weight: 600;
 }
+
+.about-placement{
+display: flex;
+flex-direction: column;
+gap: 25px;
+text-align: center;
+align-items: center;
+justify-content: center;
+max-width: 1100px;
+margin: 50px auto 0px auto;
+}
+
+.about-placement>h2{
+  font-weight: 700;
+  font-size: 40px;
+}
+
 .vmo-wrapper {
   display: grid;
   height: 100vh;
   padding: 70px;
-  row-gap: 50px;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(7, 1fr);
+  row-gap: 30px;
+  max-width: 1300px;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
   place-items: center;
+  margin: auto;
 }
 
 .vision-wrapper {
   grid-row: 1/3;
-  grid-column: 1/6;
+  grid-column: 1/8;
   background-color: rgba(161, 217, 242, 0.75);;
 }
 .vmo {
- position: relative;
-  padding: 25px;
+padding: 15px 30px 15px 30px;
+display: flex;
+flex-direction: column;
+border-radius:  7px;
 }
-.vision-title {
-  position: absolute;
+.vision-title{
+  font-weight: 900;
 }
-
-.vision-content {
+.vision-content>p {
+  font-size: 11px;
+  font-weight: 600;
 }
 
 .mission-wrapper {
+  margin-top: 18px;
   grid-row: 3/5;
-  grid-column: 1/6;
+  align-items: flex-end;
+  text-align: left;
+  grid-column: 1/8;
   background-color: rgba(197, 226, 159, 0.75);;
+}
+.mission-wrapper>.vision-content>p {
+  text-align: left;
 }
 
 .objective-wrapper {
   background: #D9D9D9;
   grid-row: 5/8;
-  grid-column: 1/6;
+  grid-column: 1/8;
 }
 
-.announcement-wrapper {
-  grid-column: 7/-1;
-  grid-row: 1/5;
+.placement-about-link-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px;
+  grid-column: -1;
+  min-width: 360px;
+  grid-row: 1/8;
+  border-radius: 7px;
+  background-color: white;
+  box-shadow: 0px 0px 5px 1px;
+}
+
+.place-link-content{
+  display: flex;
+  gap: 30px;
+}
+
+.place-link-content>img{
+  width: 20px;
+  height: 20px;
 }
