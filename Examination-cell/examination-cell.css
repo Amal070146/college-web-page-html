@@ -82,37 +82,57 @@ body {
 
 }
 
+#arrow {
+  top: -100px;
+}
+
 @media all and (max-width: 1037px) {
   .examination-abbrevation {
     margin: 10px;
+  }
+  #arrow {
+    top: -100px;
   }
 }
 
 @media all and (max-width: 888px) {
   .examination-abbrevation {
     margin: 10px;
+    letter-spacing: 15px;
   }
   .btn-grp-examination {
     flex-direction: column;
   }
+  #arrow {
+    top: -170px;
+  }
 }
+
 
 @media all and (max-width: 550px) {
   .examination-abbrevation {
     margin: 10px;
+    letter-spacing: 10px;
   }
   .about-examination {
     margin: 10px;
   }
 
   #arrow {
-    top: 350px;
-    margin-top: 150px;
+    top: -80px;
   }
+  .about-examination > h2 {
+    font-size: 20px;
+  }
+  .coordinators-examination > h2 {
+  
+    font-size: 20px;
+  }
+  
 }
-.coordinators-examination-h2 {
+/* .coordinators-examination-h2 {
   font-size: 20vw;
-}
+} */
 
 .about-examination {
   display: flex;
@@ -132,6 +152,7 @@ body {
 }
 .about-examination > h2 {
   font-weight: 600;
+  font-size: 40px;
 }
 
 .coordinators-examination {
@@ -144,6 +165,7 @@ body {
 .coordinators-examination > h2 {
   font-weight: 600;
   margin-bottom: 30px;
+  font-size: 40px;
 }
 
 .coordinators-image-examination-wrapper {
