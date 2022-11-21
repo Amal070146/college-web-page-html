@@ -9,33 +9,5 @@
     overflow: hidden;
   }
   
-  .bg-wrapper{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    display: grid;
-    place-items: center;
-  }
-  
-  .bg-CCE {
-    letter-spacing: 20px;
-    color: rgba(0, 0, 0.1, 0.32);
-  }
-  
-  .gov-body-header-font-arrow {
-    position: absolute;
-    top: 180px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    color: white;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-  
-  }
+
 
