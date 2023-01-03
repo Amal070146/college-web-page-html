@@ -245,31 +245,98 @@ body {
     padding: 20px 60px;
   }
 }
-.updates-recruiters-wrapper-placement {
+/* .updates-recruiters-wrapper-placement {
   display: grid;
 
   background-color: rgba(40, 170, 225, 0.6);
+} */
+/* testimonials */
+.testimonial-wrapper-placement {
+  height: 500px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  max-width: 1100px;
+}
+.swiper-slide > div > div {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-slide > div > div:nth-child(1) {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.swiper-slide > div > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.swiper-slide>div>div>img{
+  height: 250px;
+}
+.swiper-slide>div>div>h1{
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.swiper-container-set>div{
+  justify-self: left;
 }
 
 .updates-wrapper-placement {
   background-color: white;
+  height: 300px;
+  width: 400px;
 }
 
 .placementWrapperCarouselContainer {
   width: 100%;
-  min-height: 500px;
+  min-height: 400px;
   background-color: rgba(40, 170, 225, 0.6);
   display: flex;
-  gap: 150px;
-  padding: 20px 150px;
+  padding: 20px 150px 20px 150px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media all and (max-width: 1037px) {
   .placementWrapperCarouselContainer {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+
     padding: 20px;
+    justify-content: center;
   }
 
   .recuters-wrapper-placement > h1 {
@@ -290,9 +357,9 @@ body {
 .recuters-wrapper-placement {
   flex: 0.5;
   display: flex;
+  /* align-items: center; */
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  top: 0;
 }
 
 .container-placement > input[type="radio"] {
@@ -302,11 +369,12 @@ body {
 .recuters-wrapper-placement > h1 {
   font-size: 30px;
   font-weight: 600;
+  margin-bottom: 100px;
 }
 
 .container-placement {
   width: 100%;
-  height: 60%;
+  height: 100%;
   max-width: 300px;
   transform-style: preserve-3d;
   display: flex;
@@ -370,6 +438,8 @@ body {
   display: flex;
   padding: 30px 150px;
   gap: 200px;
+  align-items: center;
+  justify-content: center;
 }
 
 .faculty-placements {
@@ -378,11 +448,19 @@ body {
   align-items: center;
 }
 
+.faculty-placements-img > img {
+  height: 310px;
+  background-color: #d9d9d9;
+}
+
 .faculty-placements > h3 {
   font-weight: 600;
   font-size: 28px;
 }
-
+.faculty-staff-placements-wrapper {
+  display: flex;
+  flex-direction: column;
+}
 .faculty-staff-placements {
   display: flex;
   flex-direction: column;
@@ -394,15 +472,58 @@ body {
   font-size: 30px;
 }
 
-.faculty-staff-card-placement{
+.faculty-staff-card-placement {
   display: flex;
   gap: 30px;
   justify-content: center;
+  align-items: center;
 }
-.faculty-staff-card-placement>div>div{
+.faculty-staff-card-placement > div:nth-child(1) > img {
+  height: 210px;
+}
+.faculty-staff-card-placement > div:nth-child(3) > img {
+  height: 25px;
+}
+
+.faculty-staff-card-placement > div > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.faculty-staff-card-placement > div > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.faculty-placement > .icon {
+  display: flex;
+  gap: 5px;
+}
+
+.faculty-staff-card-detail-placement > div > div > h2 {
+  font-size: 30px;
+}
+
+.faculty-staff-placements-button {
+  align-self: flex-end;
+  background-color: #007fff;
+  color: white;
+  padding: 5px;
+  border-radius: 8px;
+}
+@media all and (max-width: 1037px) {
+  .faculty-placements-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .card-placement {
+    width: 250px;
+  }
 }
 
 /* contact  */
